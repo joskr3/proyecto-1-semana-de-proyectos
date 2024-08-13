@@ -24,11 +24,12 @@
 body {
   background: hsl(148, 38%, 91%);
   height: 100dvh;
+  width: 100dvw;
 }
 
 main {
   background: white;
-  height: 95%;
+  width: 90%;
   /* margin-top: 2rem;
   margin-right:1rem ;
   margin-bottom:2rem;
@@ -71,18 +72,19 @@ input {
 textarea {
   border: hsl(186, 15%, 59%) 1px solid;
   border-radius: 10px;
-
+  min-height: 100px;
 }
 
 span {
   color: hsl(169, 82%, 27%);
 }
 
-.contenedorInputs {
+.contenedorInputs,
+.contenedorRadioInputs {
   display: flex;
-  min-width: 100%;
+  width: 100%;
   flex-direction: column;
-  margin: 0.5rem auto;
+  margin-bottom: 0.5rem;
 }
 
 .radioInput {
@@ -94,6 +96,7 @@ span {
   border-radius: 10px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .inputData {
@@ -108,11 +111,45 @@ span {
 }
 
 #contact {
-  margin-left: 1rem;
   display: flex;
   align-self: baseline;
+  margin-right: 1rem;
 }
-#general-enquiry,#support-request {
+
+#general-enquiry,
+#support-request {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.sectionFullName {
+  display: flex;
+  flex-direction: column;
+}
+
+.queryLabel {
+  margin-left: 0.5rem;
+}
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    width: 60%;
+    margin: auto;
+  }
+
+  .sectionFullName {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .contenedorRadioInputs {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }

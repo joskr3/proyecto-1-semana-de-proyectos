@@ -19,6 +19,7 @@
     <h1>
       Contact Us
     </h1>
+    <section class="sectionFullName">
     <div class="contenedorInputs">
       <label for="firstname">
         First Name <span>*</span>
@@ -32,6 +33,8 @@
       </label>
       <input class="inputData" type="text" name="lastname" id="lastname" />
     </div>
+    </section>
+
     <!-- Last Name
     This field is required -->
     <div class="contenedorInputs">
@@ -42,10 +45,10 @@
     </div>
     <!-- Please enter a valid email address -->
     <!-- This field is required -->
-    <label>
+    <label class="queryLabel">
       Query Type <span>*</span>
     </label>
-    <div class="contenedorInputs">
+    <div class="contenedorRadioInputs">
       <div class="radioInput">
         <input type="radio" id="general-enquiry" name="general-enquiry" value="general-enquiry" />
         <label for="general-enquiry">General Enquiry</label>
@@ -56,13 +59,16 @@
       </div>
     </div>
     <!-- Please select a query type -->
-    <label for="mensaje">Message <span>*</span></label>
-    <textarea name="mensaje" rows="100" cols="200" title="mensaje"></textarea>
-    <!-- This field is required -->
-     <div class="inputContact">
-      <input type="checkbox" id="contact" name="contact" value="contact" />
-          <label for="contact" id="contact">I consent to being contacted by the team *</label>
+     <div class="messageContainer">
+        <label for="mensaje">Message <span>*</span></label>
+        <textarea name="mensaje" rows="20" cols="20" title="mensaje"></textarea>
      </div>
+  
+    <!-- This field is required -->
+    <div class="inputContact">
+      <input type="checkbox" id="contact" name="contact" value="contact" />
+      <label for="contact" id="contact">I consent to being contacted by the team *</label>
+    </div>
 
     <!-- To submit this form, please consent to being contacted -->
     <button type="submit">
