@@ -1,3 +1,4 @@
+/* aqui empieza la implemntaion para pantallas pequenas como el celualr por ejemplo */
 @font-face {
   font-family: karla;
   src: url(Karla-VariableFont_wght.ttf);
@@ -35,6 +36,7 @@ main {
   margin-bottom:2rem;
   margin-left: 1rem; */
   /* margin: 2rem 1rem 2rem 1rem */
+  /* 1 rem = 16px */
   margin: 2rem 1rem;
   padding: 3rem 2rem;
   border-radius: 20px;
@@ -137,19 +139,29 @@ span {
 
 }
 
+/* aqui termina la implemntacion para pantallas pequenas como el celular por ejemplo */
+
+
+
+
+
+
+
+/* aqui empieza la implemntacion para pantallas grandes como la de una tablet en modo horizontal , para adelante , como tmb seria una pantalla de una laptop por ejemplo */
+
+
+/* pantallas de un ancho minimo de 768px a mas  */
 @media only screen and (min-width: 768px) {
   main {
     width: 60%;
     margin: auto;
   }
 
-  .sectionFullName {
-    flex-direction: row;
-    gap: 1rem;
-  }
-
+  .sectionFullName,
   .contenedorRadioInputs {
     flex-direction: row;
     gap: 1rem;
   }
 }
+
+/* aqui termina la implemntacion para pantallas grandes como la de una tablet en modo horizontal , para adelante , como tmb seria una pantalla de una laptop por ejemplo */
