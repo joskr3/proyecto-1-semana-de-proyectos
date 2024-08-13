@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <main>
+    <h1>
+      Contact Us
+    </h1>
+    <div class="contenedorInputs">
+      <label for="firstname">
+        First Name <span>*</span>
+      </label>
+      <input class="inputData" type="text" name="firstname" id="firstname" />
+    </div>
+    <!-- This field is required -->
+    <div class="contenedorInputs">
+      <label for="lastname">
+        Last Name <span>*</span>
+      </label>
+      <input class="inputData" type="text" name="lastname" id="lastname" />
+    </div>
+    <!-- Last Name
+    This field is required -->
+    <div class="contenedorInputs">
+      <label for="email">
+        Email Address <span>*</span>
+      </label>
+      <input class="inputData" type="email" name="email" id="email" />
+    </div>
+    <!-- Please enter a valid email address -->
+    <!-- This field is required -->
+    <label>
+      Query Type <span>*</span>
+    </label>
+    <div class="contenedorInputs">
+      <div class="radioInput">
+        <input type="radio" id="general-enquiry" name="general-enquiry" value="general-enquiry" />
+        <label for="general-enquiry">General Enquiry</label>
+      </div>
+      <div class="radioInput">
+        <input type="radio" id="support-request" name="general-enquiry" value="support-request" />
+        <label for="support-request">Support Request</label>
+      </div>
+    </div>
+    <!-- Please select a query type -->
+    <label for="mensaje">Message <span>*</span></label>
+    <textarea name="mensaje" rows="100" cols="200" title="mensaje"></textarea>
+    <!-- This field is required -->
+     <div class="inputContact">
+      <input type="checkbox" id="contact" name="contact" value="contact" />
+          <label for="contact" id="contact">I consent to being contacted by the team *</label>
+     </div>
+
+    <!-- To submit this form, please consent to being contacted -->
+    <button type="submit">
+      Submit
+    </button>
+
+    <!-- Message Sent!
+    Thanks for completing the form. We'll be in touch soon! -->
+  </main>
+</body>
+
+</html>

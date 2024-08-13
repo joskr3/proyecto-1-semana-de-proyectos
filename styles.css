@@ -1,0 +1,118 @@
+@font-face {
+  font-family: karla;
+  src: url(Karla-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: karla;
+  src: url(Karla-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: karla;
+  src: url(Karla-VariableFont_wght.ttf);
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: karla;
+}
+
+body {
+  background: hsl(148, 38%, 91%);
+  height: 100dvh;
+}
+
+main {
+  background: white;
+  height: 95%;
+  /* margin-top: 2rem;
+  margin-right:1rem ;
+  margin-bottom:2rem;
+  margin-left: 1rem; */
+  /* margin: 2rem 1rem 2rem 1rem */
+  margin: 2rem 1rem;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+h1 {
+  color: hsl(187, 24%, 22%);
+  margin-bottom: 3rem;
+}
+
+button {
+  background: hsl(169, 82%, 27%);
+  color: white;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  font-size: larger;
+  min-height: 70px;
+  margin-top: 1rem;
+}
+
+label {
+  color: hsl(187, 24%, 22%);
+  margin-bottom: 0.5rem;
+}
+
+input {
+  border: hsl(186, 15%, 59%) 1px solid;
+  border-radius: 10px;
+}
+
+textarea {
+  border: hsl(186, 15%, 59%) 1px solid;
+  border-radius: 10px;
+
+}
+
+span {
+  color: hsl(169, 82%, 27%);
+}
+
+.contenedorInputs {
+  display: flex;
+  min-width: 100%;
+  flex-direction: column;
+  margin: 0.5rem auto;
+}
+
+.radioInput {
+  border: hsl(186, 15%, 59%) 1px solid;
+  border-radius: 3px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.inputData {
+  min-height: 50px;
+  width: 100%;
+  margin: auto;
+}
+
+.inputContact {
+  display: flex;
+  margin-top: 1rem;
+}
+
+#contact {
+  margin-left: 1rem;
+  display: flex;
+  align-self: baseline;
+}
+#general-enquiry,#support-request {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
