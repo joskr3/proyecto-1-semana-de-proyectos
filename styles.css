@@ -78,7 +78,7 @@ textarea {
 }
 
 span {
-  color: hsl(169, 82%, 27%);
+  color: #0C7D69;
 }
 
 .contenedorInputs,
@@ -90,8 +90,6 @@ span {
 }
 
 .radioInput {
-  border: hsl(186, 15%, 59%) 1px solid;
-  border-radius: 3px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 0.5rem;
@@ -136,15 +134,9 @@ span {
 .messageContainer {
   display: flex;
   flex-direction: column;
-
 }
 
 /* aqui termina la implemntacion para pantallas pequenas como el celular por ejemplo */
-
-
-
-
-
 
 
 /* aqui empieza la implemntacion para pantallas grandes como la de una tablet en modo horizontal , para adelante , como tmb seria una pantalla de una laptop por ejemplo */

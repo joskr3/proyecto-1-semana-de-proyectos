@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Frontend Mentor | Contact form(TaildwindCSS version)</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<!-- https://tailwindcss.com/docs/installation -->
+<!-- py-8(padding-vertical(y)) = padding-top:32px y a la vez padding-bottom:32px -->
+
+<body class="bg-[#DFF1E7] h-dvh w-dvw">
+  <main class="flex flex-col rounded-3xl bg-white  w-11/12 my-8 mx-auto py-8 px-4  md:w-[60%]">
+    <h1 class="text-[#2B4246] mb-12  text-3xl font-medium">
+      Contact Us
+    </h1>
+    <section class="flex flex-col md:flex-row md:gap-2">
+      <div class="flex flex-col w-full mb-1">
+        <label for="firstname" class="text-[#2B4246] mb-1">
+          First Name <span class="text-[#0C7D69]">*</span>
+        </label>
+        <input class="border border-solid border-[#87A3A6] rounded-lg min-h-12 w-full m-auto" type="text" name="firstname" id="firstname" />
+      </div>
+      <!-- This field is required -->
+      <div class="flex flex-col w-full mb-1">
+        <label for="lastname" class="text-[#2B4246] mb-1">
+          Last Name <span class="text-[#0C7D69]">*</span>
+        </label>
+        <input class="border border-solid border-[#87A3A6] rounded-lg min-h-12 w-full m-auto" type="text" name="lastname" id="lastname" />
+      </div>
+    </section>
+
+    <!-- Last Name
+    This field is required -->
+    <div class="flex flex-col w-full mb-1">
+      <label for="email" class="text-[#2B4246] mb-1">
+        Email Address <span class="text-[#0C7D69]">*</span>
+      </label>
+      <input class="border border-solid border-[#87A3A6] rounded-lg min-h-12 w-full m-auto" type="email" name="email" id="email" />
+    </div>
+    <!-- Please enter a valid email address -->
+    <!-- This field is required -->
+    <label class="text-[#2B4246] mb-1 ml-1">
+      Query Type <span class="text-[#0C7D69]">*</span>
+    </label>
+    <div class="flex flex-col w-full mb-1 md:flex-row md:gap-2">
+      <div class="radioInput border border-solid border-[#87A3A6] rounded-lg py-2 pl-1 my-1 w-full">
+        <input type="radio" id="general-enquiry" name="general-enquiry" value="general-enquiry" class="mx-1" />
+        <label class="text-[#2B4246] mb-1 ml-1" for="general-enquiry">General Enquiry</label>
+      </div>
+      <div class="radioInput border border-solid border-[#87A3A6] rounded-lg py-2 pl-1 my-1 w-full">
+        <input type="radio" id="support-request" name="general-enquiry" value="support-request" class="mx-1" />
+        <label class="text-[#2B4246] mb-1 ml-1" for="support-request">Support Request</label>
+      </div>
+    </div>
+    <!-- Please select a query type -->
+    <div class="messageContainer flex flex-col">
+      <label for="mensaje" class="text-[#2B4246] mb-1 ml-1">
+        Message <span class="text-[#0C7D69]">*</span>
+      </label>
+      <textarea class="border border-solid border-[#87A3A6] rounded-lg" name="mensaje" rows="20" cols="20" title="mensaje"></textarea>
+    </div>
+
+    <!-- This field is required -->
+    <div class="inputContact flex my-8">
+      <input type="checkbox" id="contact" name="contact" value="contact" class="flex mr-2" />
+      <label class="text-[#2B4246]" for="contact">I consent to being contacted by the team *</label>
+    </div>
+
+    <!-- To submit this form, please consent to being contacted -->
+    <button type="submit" class="bg-[#0C7D69] text-white border border-none h-[50px] rounded-lg text-xl">
+      Submit
+    </button>
+
+    <!-- Message Sent!
+    Thanks for completing the form. We'll be in touch soon! -->
+  </main>
+</body>
+
+</html>
